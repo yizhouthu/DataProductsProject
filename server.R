@@ -33,11 +33,13 @@ shinyServer(function(input, output) {
     
     # Print the guess
     output$inputValue <- renderPrint({
+        input$Submit
         isolate(input$guess)
     })
     
     # If success, then print "correct", while not, print the fitted value
     output$fittedValueOrSuccess <- renderUI({
+        input$Submit
         # First deal with some extreme cases
         if(input$Submit == 0)
             "You have not guessed yet."
