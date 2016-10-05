@@ -17,7 +17,7 @@ shinyUI(pageWithSidebar(
             c("1" = "1", "2" = "2", "3" = "3")
         ),
         uiOutput("problemContent"),
-        numericInput("guess", "You guess:", value = 5, min = 0, max = 10,
+        numericInput("guess", "Your guess:", value = 5, min = 0, max = 10,
                      step = 0.01),
         actionButton("Submit", "Submit")
     ),
