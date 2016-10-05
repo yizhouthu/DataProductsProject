@@ -52,7 +52,7 @@ shinyServer(function(input, output) {
 
         # Correct
         else if(ans[as.integer(input$problemNum)] == isolate(input$guess)) 
-            "Correct"
+            "Correct!"
         
         # Incorrect
         else{
